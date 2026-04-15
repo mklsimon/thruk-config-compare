@@ -1,0 +1,11 @@
+[server]
+# Relance l'app automatiquement à la sauvegarde
+runOnSave = true
+
+[browser]
+# Supprime la demande d'e-mail au démarrage
+gatherUsageStats = false
+
+[theme]
+# Optionnel : pour le look
+# base = "dark"

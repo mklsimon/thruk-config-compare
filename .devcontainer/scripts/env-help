@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Affiche l'aide des commandes d'environnement
+
+HELP_FILE="/workspace/.devcontainer/env-commands.help"
+
+if [ -f "$HELP_FILE" ]; then
+    cat "$HELP_FILE"
+else
+    echo "Aucun fichier d'aide trouvé."
+fi

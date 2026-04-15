@@ -1,0 +1,15 @@
+🛠️  - Commande env-init
+La commande `env-init` permet d'installer ou de réinstaller toutes les dépendances Python du projet dans l'environnement virtuel local (`.venv`).
+- Elle crée le venv s'il n'existe pas.
+- Elle installe les paquets listés dans `requirements.txt` si le fichier existe.
+
+🧹 - Commande env-clean
+La commande `env-clean` supprime l'environnement virtuel local (`.venv`) et les fichiers temporaires Python (`*.pyc`, `__pycache__`).
+- Permet de repartir d'un environnement propre.
+
+🔍 - Commande env-check
+La commande `env-check` affiche l'état de l'environnement Python local :
+- Présence et version du venv.
+- Liste des paquets installés.
+- Variables d'environnement importantes.
+

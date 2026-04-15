@@ -1,0 +1,3 @@
+.venv/**
+dump_tcplife/**
+config/thruk_config.json

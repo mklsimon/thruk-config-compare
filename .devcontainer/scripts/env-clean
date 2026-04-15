@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Nettoie l'environnement Python local
+
+set -e
+
+VENV_PATH="/workspace/.venv"
+
+if [ -d "$VENV_PATH" ]; then
+    echo "Suppression du venv..."
+    rm -rf "$VENV_PATH"
+else
+    echo "Aucun venv à supprimer."
+fi
+
+# Optionnel : supprimer les fichiers temporaires Python
+find /workspace -type f -name "*.pyc" -delete
+find /workspace -type d -name "__pycache__" -exec rm -rf {} +
+
+echo "✅ Environnement nettoyé."

@@ -1,0 +1,8 @@
+{
+    "hosts": {
+        "columns": ["name", "state"]
+    },
+    "services": {
+        "columns": ["host_name", "state", "description", "host_address"]
+    }
+}

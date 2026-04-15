@@ -1,0 +1,21 @@
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - type: bind
+        source: ..
+        target: /workspace
+      - type: volume
+        source: devcontainer-bashhistory
+        target: /commandhistory
+      - type: bind
+        source: /tmp/.X11-unix
+        target: /tmp/.X11-unix
+
+volumes:
+  devcontainer-bashhistory:

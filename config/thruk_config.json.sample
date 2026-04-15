@@ -1,0 +1,12 @@
+{
+  "OnPrem-recette": {
+    "url": "https://fqdn_thruk1/thruk/r/",
+    "apikey": "apikey_thruk1",
+    "user": "user-thruk1"
+  },
+    "GCP-recette": {
+    "url": "https://fqdn_thruk2/thruk/r/",
+    "apikey": "apikey_thruk2",
+    "user": "user-thruk2"
+  }
+}

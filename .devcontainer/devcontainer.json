@@ -1,0 +1,28 @@
+{
+
+  "name": "Python DevContainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  // Personnalisez les extensions et paramètres ci-dessous selon vos besoins
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.terminal.activateEnvironment": false,
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/usr/bin/bash"
+          }
+        }
+      },
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-python.python"
+      ]
+    }
+  },
+  "postStartCommand": "/usr/local/bin/env-init; cat /workspace/.devcontainer/env-commands.help ; echo '✅ Devcontainer prêt ! Bienvenue.'"
+}
+  

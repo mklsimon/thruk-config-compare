@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Affiche l'état de l'environnement Python
+
+VENV_PATH="/workspace/.venv"
+
+if [ -d "$VENV_PATH" ]; then
+    echo "Venv présent : $VENV_PATH"
+    "$VENV_PATH/bin/python" --version
+    echo -e "\nPaquets installés :"
+    "$VENV_PATH/bin/pip" list
+else
+    echo "Venv absent."
+fi
+
+echo -e "\nVariables d'environnement importantes :"
+env | grep -E 'PYTHON|PATH'
+
+echo -e "\n✅ État de l'environnement affiché."

@@ -1,0 +1,3 @@
+export PROMPT_COMMAND="history -a"
+export HISTFILE="/commandhistory/bash_history"
+alias ll="ls -l"
