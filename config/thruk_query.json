@@ -4,5 +4,11 @@
     },
     "services": {
         "columns": ["host_name", "state", "description", "host_address"]
+    },
+    "timeperiods": {
+        "columns": ["name", "alias"]
+    },
+    "contacts": {
+        "columns": ["name", "alias", "email"]
     }
 }

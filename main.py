@@ -104,7 +104,7 @@ def main():
         # --- 4. PLACEHOLDER POUR LE COCKPIT GLOBAL ---
         cockpit_container = st.empty() 
 
-        endpoints = ["hosts", "services", "timeperiods"]
+        endpoints = load_query_config().keys()
         
         # Dictionnaires pour stocker les scores finaux
         summary = {ep: {"abs": 0, "trop": 0, "diff": 0} for ep in endpoints}
